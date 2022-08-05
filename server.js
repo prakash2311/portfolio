@@ -23,7 +23,7 @@ app.listen(3000, () => {
   console.log("server is running on port 3000");
 });
 
-app.get("/userlogin", (req, res) => {
+app.get("/news", (req, res) => {
   console.log(req.query);
   res.json({ msg: "OK GOOD", status: 200 });
 });
