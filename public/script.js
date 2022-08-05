@@ -64,9 +64,11 @@ const sendGetData = () => {
     });
 };
 
-function getNewsData() {
+//********** */
+
+function getNewsDataIsrael() {
   fetch(
-    "http://newsapi.org/v2/everything?q=$london&apiKey=a3b897852a274e0c86d0af39cc3dfbe5"
+    "http://newsapi.org/v2/everything?q=$Israel&apiKey=a3b897852a274e0c86d0af39cc3dfbe5"
   )
     .then((res) => res.json())
     .then((data) => {
@@ -78,7 +80,31 @@ function getNewsData() {
     });
 }
 
-getNewsData();
+getNewsDataIsrael();
+
+//************ */
+
+document
+  .getElementById("button")
+  .addEventListener("click", function getNewsData() {
+    // window.getNewsDataIsrael = function () {};
+    // function getNewsDataIsrael() {}
+    const searchValue = document.getElementById("search").value;
+    console.log(searchValue);
+
+    fetch(
+      `http://newsapi.org/v2/everything?q=${searchValue}&apiKey=a3b897852a274e0c86d0af39cc3dfbe5`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data.articles);
+        addNewsToPAge(data.articles);
+        
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  });
 
 function addNewsToPAge(arr) {
   const root = document.getElementById("root");
