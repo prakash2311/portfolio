@@ -16,13 +16,13 @@ export const Projects = () =>{
             title: "my personal portfolio",
             description: "my personal potfolio in react.",
             imgurl: pro01,
-            url: "https://github.com/prakash2311",
+            url: "https://prakashdevta.herokuapp.com/",
         },
         {
             title: "IPH",
             description: "IPH is a real-Estate app created in react.",
             imgurl: pro02,
-            url: "",
+            url: "https://iph-real-estate.netlify.app/",
         },
     ];
     const projects02 =[
@@ -30,7 +30,7 @@ export const Projects = () =>{
             title: "IPH",
             description: "IPH is a real-Estate app created in react.",
             imgurl: pro02,
-            url: "",
+            url: "https://iph-real-estate.netlify.app/",
         }
     ];
     const projects03 =[
@@ -38,14 +38,14 @@ export const Projects = () =>{
             title: "my personal portfolio",
             description: "my personal potfolio in react.",
             imgurl: pro01,
-            url: "https://github.com/prakash2311",
+            url: "https://prakashdevta.herokuapp.com/",
 
         },
         {
             title: "IPH",
             description: "IPH is a real-Estate app created in react.",
             imgurl: pro02,
-            url: "",
+            url: "https://iph-real-estate.netlify.app/",
         }
     ];
 
