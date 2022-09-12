@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import linkedin from '../assets/img/linkedin.svg';
 import github from '../assets/img/github.svg';
-import resume from '../assets/img/Prakash_Devta.pdf'
+import resume from '../assets/img/prakashcv.pdf'
 
 
 export const Footer = () => {
